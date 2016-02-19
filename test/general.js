@@ -27,7 +27,6 @@ describe('general', function () {
       'app/components/header/header.html',
       'app/components/home/home.html',
       'app/components/home/home.ts',
-      'app/directives',
       'app/images',
       'app/scripts/config.ts',
       'app/scripts/config.html',
