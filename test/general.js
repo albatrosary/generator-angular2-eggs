@@ -71,7 +71,6 @@ describe('general', function () {
       'test/service/gruntfiles/gruntfiles.spec.js',
       'test/karma.conf.js',
       'test/main.spec.js',
-      '.bowerrc',
       '.editorconfig',
       '.gitattributes',
       '.gitignore',
