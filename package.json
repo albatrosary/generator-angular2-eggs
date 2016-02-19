@@ -37,8 +37,7 @@
     "modernizr",
     "jquery",
     "grunt",
-    "angular",
-    "angular-new-router",
+    "angular2",
     "express"
   ],
   "dependencies": {
