@@ -20,17 +20,18 @@ describe('general', function () {
   it('creates expected files', function () {
     assert.file([
       'app/components/about/about.html',
-      'app/components/about/about.js',
+      'app/components/about/about.ts',
       'app/components/contact/contact.html',
-      'app/components/contact/contact.js',
+      'app/components/contact/contact.ts',
       'app/components/footer/footer.html',
       'app/components/header/header.html',
       'app/components/home/home.html',
-      'app/components/home/home.js',
+      'app/components/home/home.ts',
       'app/directives',
       'app/images',
-      'app/scripts/config.js',
-      'app/scripts/main.js',
+      'app/scripts/config.ts',
+      'app/scripts/config.html',
+      'app/scripts/main.ts',
       'app/service/gruntfiles/gruntfiles.js',
       'app/styles',
       'app/favicon.ico',
@@ -78,7 +79,7 @@ describe('general', function () {
       '.jscsrc',
       '.eslintrc',
       '.yo-rc.json',
-      'bower.json',
+      'tsconfig.json',
       'Gruntfile.js',
       'package.json'
     ]);
