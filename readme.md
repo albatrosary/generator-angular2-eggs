@@ -1,8 +1,8 @@
-[![NPM version](http://img.shields.io/npm/v/generator-angular-eggs.svg?style=flat-square)](https://npmjs.org/package/generator-angular-eggs) [![Build Status](https://secure.travis-ci.org/albatrosary/generator-angular-eggs.svg?branch=master)](http://travis-ci.org/albatrosary/generator-angular-eggs) [![Coverage Status](https://coveralls.io/repos/albatrosary/generator-angular-eggs/badge.png?branch=master)](https://coveralls.io/r/albatrosary/generator-angular-eggs?branch=master) [![Dependency Status](https://david-dm.org/albatrosary/generator-angular-eggs.svg)](https://david-dm.org/albatrosary/generator-angular-eggs) [![devDependency Status](https://david-dm.org/albatrosary/generator-angular-eggs/dev-status.svg)](https://david-dm.org/albatrosary/generator-angular-eggs#info=devDependencies) [![peerDependency Status](https://david-dm.org/albatrosary/generator-angular-eggs/peer-status.svg)](https://david-dm.org/albatrosary/generator-angular-eggs#info=peerDependencies)
+[![NPM version](http://img.shields.io/npm/v/generator-angular2-eggs.svg?style=flat-square)](https://npmjs.org/package/generator-angular2-eggs) [![Build Status](https://secure.travis-ci.org/albatrosary/generator-angular2-eggs.svg?branch=master)](http://travis-ci.org/albatrosary/generator-angular2-eggs) [![Coverage Status](https://coveralls.io/repos/albatrosary/generator-angular2-eggs/badge.png?branch=master)](https://coveralls.io/r/albatrosary/generator-angular2-eggs?branch=master) [![Dependency Status](https://david-dm.org/albatrosary/generator-angular2-eggs.svg)](https://david-dm.org/albatrosary/generator-angular2-eggs) [![devDependency Status](https://david-dm.org/albatrosary/generator-angular2-eggs/dev-status.svg)](https://david-dm.org/albatrosary/generator-angular2-eggs#info=devDependencies) [![peerDependency Status](https://david-dm.org/albatrosary/generator-angular2-eggs/peer-status.svg)](https://david-dm.org/albatrosary/generator-angular2-eggs#info=peerDependencies)
 
-# Angular 1.5.0, Component Router, Bootstrap v4-alpha and TingoDB(like MongoDB) App Generator 
+# Angular2, Component Router, Bootstrap v4-alpha and TingoDB(like MongoDB) App Generator 
 
-This generator are using Angular1.5, Angular Component Router, Bootstrap v4(alpha) and Express on Node.js. Instead of MongoDB, it will use the lighter [TingoDB](http://www.tingodb.com/).  
+This generator are using Angular2, Angular Component Router, Bootstrap v4(alpha) and Express on Node.js. Instead of MongoDB, it will use the lighter [TingoDB](http://www.tingodb.com/).  
 
 Angular we have emphasized the development life cycle. It supports the next thing for that.
 
@@ -14,7 +14,7 @@ Angular we have emphasized the development life cycle. It supports the next thin
 
 ## Usage
 
-Install: `npm install -g generator-angular-eggs`
+Install: `npm install -g generator-angular2-eggs`
 
 Make a new directory and `cd` into it:
 ```
@@ -22,62 +22,49 @@ mkdir [app-name] && cd $_
 ```
 This [app-name] is used as ng-app="[app-name]"
 
-Run `yo angular-eggs`:
+Run `yo angular2-eggs`:
 ```
-yo angular-eggs
+yo angular2-eggs
 ```
 
 ## Generators
 
 Available generators:
 
-- yo angular-eggs:components [name]
-- yo angular-eggs:service [name]
-- yo angular-eggs:resource [name]
-- yo angular-eggs:server [name]
+- yo angular2-eggs:components [name]
+- yo angular2-eggs:service [name]
+- yo angular2-eggs:resource [name]
+- yo angular2-eggs:server [name]
  
 ## Notes
 
-`yo angular-eggs:components [name]` command creates a file as follows:
+`yo angular2-eggs:components [name]` command creates a file as follows:
 
 ```bash
 app/components/[name]/[name].html
-app/components/[name]/[name].js
-test/components/[name]/[name].spec.js
+app/components/[name]/[name].ts
+test/components/[name]/[name].spec.ts
 ```
 
 When `name` is `appName`:
 
 ```bash
 app/components/appname/appname.html
-app/components/appname/appname.js
-test/components/appname/appname.spec.js
+app/components/appname/appname.ts
+test/components/appname/appname.spec.ts
 ```
 
 Component name is `appName`. So CustomTag name is `app-name`
 
 ### Components
 
-Generates an Angular Components, as the Angular Module name is Sample.
+Generates an Angular2 Components, as the Angular Module name is Sample.
 
 Example:
 
 ```
-yo angular-eggs:components mycomponents
+yo angular2-eggs:components mycomponents
 ```
-
-## Tasks
-
-- npm start
-- npm run serve:dist
-- npm run build
-- npm test
-- npm run test:watch
-- npm run test:coverage
-- npm run e2e
-- npm run doc
-- npm run metric
-- npm run metric:test
 
 ## License
 
