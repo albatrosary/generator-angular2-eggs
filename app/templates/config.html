@@ -1,0 +1,22 @@
+<header class="navbar navbar-light navbar-fixed-top bg-faded bd-navbar">
+  <div class="clearfix hidden-sm-up">
+    <button class="navbar-toggler pull-right hidden-sm-up collapsed" type="button" data-toggle="collapse" data-target="#app-nav"  aria-expanded="false">
+      &#9776;
+    </button>
+    <a class="navbar-brand" href="/">Angular2 Eggs</a>
+  </div>
+
+  <nav class="navbar-toggleable-xs collapse" id="app-nav" aria-expanded="false" style="height: 0px;">
+    <ul class="nav navbar-nav">
+      <li class="hidden-xs-down"><a class="navbar-brand" href="/">Angular2 Eggs</a></li>
+      <li class="nav-item"><a class="nav-link" [routerLink]="['Home']">Home</a></li>
+      <li class="nav-item"><a class="nav-link" [routerLink]="['About']">About</a></li>
+      <li class="nav-item"><a class="nav-link" [routerLink]="['Contact']">Contact</a></li>
+      <li class="nav-item"><a class="nav-link" href="https://github.com/albatrosary/generator-angular-eggs/blob/master/readme.md">github</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,8 @@
+node_modules
+dist
+.tmp
+.map
+.js
+docs
+report
+npm-debug.log

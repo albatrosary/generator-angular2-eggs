@@ -1,0 +1,21 @@
+<!-- Default panel contents -->
+<h4>Grunt <small>The JavaScript Task Runner</small></h4>
+<p>The following tasks are available for this project:</p>
+
+<!-- Table -->
+<table class="table">
+  <thead>
+    <tr>
+      <th>Tools</th>
+      <th>Version</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="#item of list">
+      <th scope="row">{{item.name}}</th>
+      <td>{{item.version}}</td>
+      <td>{{item.desc}}</td>
+    </tr>
+  </tbody>
+</table>
