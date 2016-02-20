@@ -31,7 +31,8 @@ yo angular2-eggs
 
 Available generators:
 
-- yo angular2-eggs:components [name]
+- yo angular2-eggs:components [name] [name(option)]
+- yo angular2-eggs:attributes [name] [name(option)]
 - yo angular2-eggs:service [name]
 - yo angular2-eggs:server [name]
 
