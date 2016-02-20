@@ -1,0 +1,13 @@
+<!-- Table -->
+<table class="table">
+  <thead>
+    <tr>
+      <th>Tools</th>
+      <th>Version</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="#item of list" aboutDetail [data]="item"></tr>
+  </tbody>
+</table>
