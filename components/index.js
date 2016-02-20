@@ -13,16 +13,13 @@ module.exports = yeoman.generators.Base.extend({
     yeoman.generators.Base.apply(this, arguments);
     var text = arguments[0][0];
     var sub = arguments[0][1];
-    console.log(!sub)
     this.text = text;
     if (!sub) {
-      console.log('component');
       this.dashCase = dashCase(text);
       this.name = text.toLowerCase();
       this.filename = text.toLowerCase();
       this.className = text.charAt(0).toUpperCase() + text.slice(1);
     } else {
-      console.log('subcomponent');
       this.dashCase = dashCase(sub);
       this.name = text.toLowerCase();
       this.filename = text.toLowerCase() + '.' + sub.toLowerCase();
