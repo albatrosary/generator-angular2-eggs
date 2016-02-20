@@ -8,9 +8,6 @@ import {HTTP_PROVIDERS, Http, Request, Response} from 'angular2/http';
 })
 
 export class AboutComponent {
-  private status: number;
-  private body: string;  
-  
   constructor(http: Http) {
     http.request(new Request({
       method: "Get",
