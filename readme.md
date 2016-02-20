@@ -71,14 +71,40 @@ component file
 export class SubCompComponent { }
 ```
 
-### Components
+Case `yo angular2-eggs:attribute appComp `
 
-Generates an Angular2 Components, as the Angular Module name is Sample.
-
-Example:
-
+make file
+```bash
+app/components/appcomp/appcomp.ts
+app/components/appcomp/appcomp.html
+test/components/appcomp/appcomp.spec.ts
 ```
-yo angular2-eggs:components mycomponents
+
+component file
+```javascript1
+@Component({
+  selector: '[appComp]',
+  templateUrl: 'components/appcomp/appcomp.html'
+})
+export class AppCompComponent { }
+```
+
+Case ` yo angular2-eggs:attribute appComp subComp `
+
+make file
+```bash
+app/components/appcomp/appcomp.subcomp.ts
+app/components/appcomp/appcomp.subcomp.html
+test/components/appcomp/appcomp.subcomp.spec.ts
+```
+
+component file
+```javascript1
+@Component({
+  selector: '[subComp]',
+  templateUrl: 'components/appcomp/appcomp.subcomp.html'
+})
+export class SubCompComponent { }
 ```
 
 ## License
