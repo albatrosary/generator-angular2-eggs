@@ -31,39 +31,81 @@ yo angular2-eggs
 
 Available generators:
 
-- yo angular2-eggs:components [name]
+- yo angular2-eggs:components [name] [name(option)]
+- yo angular2-eggs:attributes [name] [name(option)]
 - yo angular2-eggs:service [name]
-- yo angular2-eggs:resource [name]
 - yo angular2-eggs:server [name]
- 
-## Notes
 
-`yo angular2-eggs:components [name]` command creates a file as follows:
+Case ` yo angular2-eggs:components appComp`
 
+make file
 ```bash
-app/components/[name]/[name].html
-app/components/[name]/[name].ts
-test/components/[name]/[name].spec.ts
+app/components/appcomp/appcomp.ts
+app/components/appcomp/appcomp.html
+test/components/appcomp/appcomp.spec.ts
 ```
 
-When `name` is `appName`:
+component file
+```javascript
+@Component({
+  selector: 'app-comp',
+  templateUrl: 'components/appcomp/appcomp.html'
+})
+export class AppCompComponent { }
+```
 
+Case `yo angular2-eggs:components appComp subComp`
+
+make file
 ```bash
-app/components/appname/appname.html
-app/components/appname/appname.ts
-test/components/appname/appname.spec.ts
+app/components/appcomp/appcomp.subcomp.ts
+app/components/appcomp/appcomp.subcomp.html
+test/components/appcomp/appcomp.subcomp.spec.ts
 ```
 
-Component name is `appName`. So CustomTag name is `app-name`
-
-### Components
-
-Generates an Angular2 Components, as the Angular Module name is Sample.
-
-Example:
-
+component file
+```javascript
+@Component({
+  selector: 'sub-comp',
+  templateUrl: 'components/appcomp/appcomp.subcomp.html'
+})
+export class SubCompComponent { }
 ```
-yo angular2-eggs:components mycomponents
+
+Case `yo angular2-eggs:attribute appComp `
+
+make file
+```bash
+app/components/appcomp/appcomp.ts
+app/components/appcomp/appcomp.html
+test/components/appcomp/appcomp.spec.ts
+```
+
+component file
+```javascript1
+@Component({
+  selector: '[appComp]',
+  templateUrl: 'components/appcomp/appcomp.html'
+})
+export class AppCompComponent { }
+```
+
+Case ` yo angular2-eggs:attribute appComp subComp `
+
+make file
+```bash
+app/components/appcomp/appcomp.subcomp.ts
+app/components/appcomp/appcomp.subcomp.html
+test/components/appcomp/appcomp.subcomp.spec.ts
+```
+
+component file
+```javascript1
+@Component({
+  selector: '[subComp]',
+  templateUrl: 'components/appcomp/appcomp.subcomp.html'
+})
+export class SubCompComponent { }
 ```
 
 ## License
