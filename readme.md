@@ -17,13 +17,8 @@ Angular we have emphasized the development life cycle. It supports the next thin
 Install: `npm install -g generator-angular2-eggs`
 
 Make a new directory and `cd` into it:
-```
+```bash
 mkdir [app-name] && cd $_
-```
-This [app-name] is used as ng-app="[app-name]"
-
-Run `yo angular2-eggs`:
-```
 yo angular2-eggs
 ```
 
