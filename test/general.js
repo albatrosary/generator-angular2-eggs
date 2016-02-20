@@ -31,7 +31,7 @@ describe('general', function () {
       'app/scripts/config.ts',
       'app/scripts/config.html',
       'app/scripts/main.ts',
-      'app/service/gruntfiles/gruntfiles.js',
+      'app/service/gruntfiles/gruntfiles.ts',
       'app/styles',
       'app/favicon.ico',
       'app/index.html',
