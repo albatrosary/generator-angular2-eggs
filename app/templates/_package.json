@@ -39,7 +39,6 @@
     "karma-jasmine": "^0.3.7",
     "karma-ng-html2js-preprocessor": "^0.2.1",
     "karma-phantomjs2-launcher": "^0.5.0",
-    "lite-server": "^2.1.0",
     "load-grunt-configs": "^0.4.3",
     "load-grunt-tasks": "^3.4.0",
     "phantomjs2": "^2.0.2",
@@ -51,8 +50,7 @@
   "scripts": {
     "tsc": "tsc",
     "tsc:w": "tsc -w",
-    "lite": "lite-server",
-    "build": "concurrent \"npm run tsc:w\""
+    "build": "concurrent \"npm run tsc:w\" \"grunt serve\""
   },
   "engines": {
     "node": ">=4.2.0"

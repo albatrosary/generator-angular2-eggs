@@ -6,11 +6,11 @@ This generator are using Angular2, Angular Component Router, Bootstrap v4(alpha)
 
 Angular we have emphasized the development life cycle. It supports the next thing for that.
 
-* Unit Test
+* Unit Test(unfinished)
 * End-to-End Test
-* Documentation
-* Coverage
-* Metric
+* Documentation(unfinished)
+* Coverage(unfinished)
+* Metric(unfinished)
 
 ## Usage
 
@@ -21,6 +21,14 @@ Make a new directory and `cd` into it:
 mkdir [app-name] && cd $_
 yo angular2-eggs
 ```
+
+## Development
+
+Run the following command at the time of development:
+```bash
+npm run build
+```
+Although still some warning comes out, never mind :)
 
 ## Generators
 
