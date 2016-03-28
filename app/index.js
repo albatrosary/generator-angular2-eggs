@@ -155,6 +155,9 @@ module.exports = yeoman.generators.Base.extend({
   ts: function () {
     this.copy('tsconfig.json', 'tsconfig.json');
   },
+  typings: function () {
+    this.copy('typings.json', 'typings.json');
+  },
   config: function () {
     this.directory('config');
 

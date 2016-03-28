@@ -1,6 +1,5 @@
-<% if (includeBootstrap) { %>// bower:scss
-@import "bootstrap/scss/bootstrap.scss";
-// endbower
+<% if (includeBootstrap) { %>
+@import "node_modules/bootstrap/scss/bootstrap.scss";
 
 .browsehappy {
   margin: 0.2em 0;
