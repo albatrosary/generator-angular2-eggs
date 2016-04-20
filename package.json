@@ -1,6 +1,6 @@
 {
   "name": "generator-angular2-eggs",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Angular2, Angular Component Router, Bootstrap v4(alpha) and TingoDB(like MongoDB) with an Express server",
   "license": "MIT",
   "author": {
